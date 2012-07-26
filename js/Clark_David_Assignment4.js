@@ -4,6 +4,8 @@
    Visual Frameworks function library.
 */
 
+//Problem 1
+
 function checkEmailPattern (emailCheck) {
 	var emailAddress = emailCheck
 	var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/
@@ -17,6 +19,8 @@ function checkEmailPattern (emailCheck) {
 
 checkEmailPattern("Ackdamos@fullsail.edu");
 
+//Problem 2
+
 function fixMoney(moneyToFix) {
 	var money = moneyToFix
 	money.toFixed(2)
@@ -24,6 +28,8 @@ function fixMoney(moneyToFix) {
 };
 
 fixMoney(25643.76753);
+
+//Problem 3
 
 function checkIfUrl (testUrl) {
 	var url = testUrl
@@ -41,6 +47,8 @@ function checkIfUrl (testUrl) {
 
 checkIfUrl("https://www.facebook.com/");
 
+//Problem 4
+
 var checkNumber = function (testNumber) {
 	var phoneNumber = testNumber;
 	var checkTest = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
@@ -53,6 +61,8 @@ var checkNumber = function (testNumber) {
 
 checkNumber("315-643-2057");
 
+//Problem 5
+
 function changeSeparation (changeString) {
 	if (changeString) {
 		console.log("a/" + "b/" + "c/");
@@ -60,6 +70,8 @@ function changeSeparation (changeString) {
 };
 
 changeSeparation("a,b,c");
+
+//Problem 6
 
 function getSmallestNumber () {
 	function bigNumber (element, index, array) {
@@ -78,3 +90,5 @@ function getSmallestNumber () {
 	};
 	console.log(arrayToCheck.shift());
 };
+
+getSmallestNumber();
