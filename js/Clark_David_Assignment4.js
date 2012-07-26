@@ -60,3 +60,21 @@ function changeSeparation (changeString) {
 };
 
 changeSeparation("a,b,c");
+
+function getSmallestNumber () {
+	function bigNumber (element, index, array) {
+		return (element >= 25);
+	};
+	var arrayToCheck = [
+		234,
+		43,
+		24,
+		46,
+		124,
+		26
+	];
+	arrayToCheck.sort(function (a, b)) {
+		return a - b;
+	};
+	console.log(arrayToCheck.shift());
+};
