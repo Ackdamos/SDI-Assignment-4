@@ -24,3 +24,12 @@ function fixMoney(moneyToFix) {
 };
 
 fixMoney(25643.76753);
+
+function checkIfUrl (testUrl) {
+	var url = testUrl
+	var testCheck = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
+	var isUrl = testCheck.test(url);
+	console.log("This string is a " + isUrl + " URL.");
+};
+
+checkIfUrl("https://www.facebook.com/");
