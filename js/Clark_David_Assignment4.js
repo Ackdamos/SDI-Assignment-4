@@ -39,6 +39,16 @@ function checkIfUrl (testUrl) {
 
 };
 
-
-
 checkIfUrl("https://www.facebook.com/");
+
+var checkNumber = function (testNumber) {
+	var phoneNumber = testNumber;
+	var checkTest = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+	if (checkTest.test(phoneNumber)) {
+		console.log("This string is a phone number.");
+	} else {
+		console.log("This string isn't a phone number.");
+	}
+};
+
+checkNumber("315-643-2057");
