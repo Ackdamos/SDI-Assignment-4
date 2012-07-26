@@ -52,3 +52,11 @@ var checkNumber = function (testNumber) {
 };
 
 checkNumber("315-643-2057");
+
+function changeSeparation (changeString) {
+	if (changeString) {
+		console.log("a/" + "b/" + "c/");
+	}
+};
+
+changeSeparation("a,b,c");
