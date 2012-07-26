@@ -30,6 +30,15 @@ function checkIfUrl (testUrl) {
 	var testCheck = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
 	var isUrl = testCheck.test(url);
 	console.log("This string is a " + isUrl + " URL.");
+	if (url.charAt(4) === "s") {
+		console.log("This string is a https URL.");
+	}
+	if (url.charAt(4) === ":") {
+		console.log("This string is a http URL.");
+	}
+
 };
+
+
 
 checkIfUrl("https://www.facebook.com/");
