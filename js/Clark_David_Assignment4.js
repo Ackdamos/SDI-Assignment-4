@@ -8,14 +8,14 @@ function checkEmailPattern (emailCheck) {
 	var emailAddress = emailCheck
 	var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/
 	if (emailPattern.test(emailAddress)) {
-		console.log("This email follows the pattern.");
+		console.log("This email follows the aaa@bbb.ccc pattern.");
 	} else {
-		console.log("This email does not follow the pattern.");
+		console.log("This email does not follow the aaa@bbb.ccc pattern.");
 	}
 	
 };
 
-checkEmailPattern("asdfg@gdsfs.com");
+checkEmailPattern("Ackdamos@fullsail.edu");
 
 function fixMoney(moneyToFix) {
 	var money = moneyToFix
