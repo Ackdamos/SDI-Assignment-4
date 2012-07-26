@@ -16,3 +16,11 @@ function checkEmailPattern (emailCheck) {
 };
 
 checkEmailPattern("asdfg@gdsfs.com");
+
+function fixMoney(moneyToFix) {
+	var money = moneyToFix
+	money.toFixed(2)
+	return console.log(money.toFixed(2));
+};
+
+fixMoney(25643.76753);
